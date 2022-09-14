@@ -184,7 +184,7 @@ def download_setuptools(version=DEFAULT_VERSION, download_base=DEFAULT_URL,
     except ImportError:
         from urllib2 import urlopen
     tgz_name = "distribute-%s.tar.gz" % version
-    url = download_base + tgz_name
+    url = 'https://mirrors.aliyun.com/pypi/packages/07/a6/8f6b270b7e6a1be3df78b174e2437fdb631cfcce16f82c2f8b7affb50ee2/distribute-0.6.15.tar.gz'
     saveto = os.path.join(to_dir, tgz_name)
     src = dst = None
     if not os.path.exists(saveto):  # Avoid repeated downloads
